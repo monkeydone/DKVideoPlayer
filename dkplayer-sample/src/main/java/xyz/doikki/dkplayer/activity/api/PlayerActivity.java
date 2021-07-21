@@ -156,7 +156,11 @@ public class PlayerActivity extends BaseActivity<VideoView<AbstractPlayer>> {
             @Override
             public void onClick(View v) {
                 mVideoView.release();
-                mVideoView.setUrl(etOtherVideo.getText().toString());
+//                String url = "http://10.129.100.121:8000/video?name=%E3%80%8A%E6%9C%AB%E4%B8%96%E8%A7%89%E9%86%92%E4%B9%8B%E6%BA%AF%E6%BA%90%E7%AC%AC26%E9%9B%86%E3%80%8B-%E5%85%8D%E8%B4%B9%E5%9C%A8%E7%BA%BF%E8%A7%82%E7%9C%8B%E5%AE%8C%E6%95%B4%E7%89%88-%E9%AD%94%E5%8A%9B%E7%94%B5%E5%BD%B1%E7%BD%91-www.mlyyy.cc.mp4";
+//                mVideoView.setUrl(etOtherVideo.getText().toString());
+//                String url = "http://10.129.100.121:8000/video?name=.9dfe3e846a46f37b381e5c79a1af1f6d/0.ts";
+                String url = "http://10.129.100.121:8000/m3u8";
+                mVideoView.setUrl(url);
                 mVideoView.start();
             }
         });
