@@ -1,6 +1,5 @@
 apply plugin: 'com.android.library'
 apply from: '../constants.gradle'
-apply from: 'com.github.dcendents.android-maven'
 
 group='com.github.monkeydone'
 
